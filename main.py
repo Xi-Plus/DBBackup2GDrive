@@ -15,9 +15,9 @@ def backup(db):
         parentid = GDRIVE_PARENTID[db]
 
     if parentid:
-        os.system('gdrive upload {} -p {}'.format(filename, parentid))
+        os.system(GDRIVE_CMD_PARENT.format(filename, parentid))
     else:
-        os.system('gdrive upload {}'.format(filename))
+        os.system(GDRIVE_CMD.format(filename))
 
 
 def main():

@@ -11,3 +11,6 @@ GDRIVE_PARENTID = {
 }
 
 FILENAME_PREFIX = 'myserver-'
+
+GDRIVE_CMD = 'gdrive upload -f {0}'
+GDRIVE_CMD_PARENT = 'gdrive upload -f {0} -p {1}'
